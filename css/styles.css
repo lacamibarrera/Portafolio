@@ -1,0 +1,181 @@
+/* Variables globales para colores y tipografías */
+:root {
+    --primary-color:rgba(151, 35, 153, 0.97); 
+    --secondary-color:rgb(95, 5, 185); 
+    --background-color: #f8f9fa; /* Fondo claro */
+    --dark-color: #343a40; /* Texto oscuro */
+    --light-color: #ffffff; /* Blanco */
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    background-color: var(--background-color);
+    color: var(--dark-color);
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3 {
+    font-family: 'Zilla Slab', serif;
+}
+
+/* Navegación */
+.navbar {
+    background-color: var(--primary-color);
+}
+.navbar-nav .nav-link {
+    color: var(--light-color);
+    font-weight: 500;
+}
+.navbar-nav .nav-link:hover {
+    color: var(--secondary-color);
+}
+
+/* Sección Hero */
+.hero-principal {
+    padding: 2rem 0;
+    text-align: center;
+    background-color: var(--light-color);
+}
+.hero-principal img {
+    max-width: 150px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+   
+}
+.hero-principal h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.hero-principal p {
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+}
+
+/* Sobre mí */
+.sobre-mi {
+    padding: 2rem;
+    background-color: var(--background-color);
+}
+.sobre-mi h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+.sobre-mi p {
+    text-align: justify;
+    line-height: 1.6;
+}
+
+/* Experiencia */
+.experiencia {
+    padding: 2rem;
+    background-color: var(--light-color);
+}
+.experiencia h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+.columna {
+    background-color: var(--light-color);
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Proyectos */
+.proyectos {
+    padding: 2rem;
+    background-color: var(--background-color);
+}
+.proyectos h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+.proyecto {
+    position: relative;
+    margin-bottom: 1rem;
+}
+.proyecto img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.overlay {
+    background-color: rgba(139, 34, 153, 0.81);
+    color: var(--light-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    border-radius: 10px;
+    transition: opacity 0.3s ease;
+}
+.proyecto:hover .overlay {
+    opacity: 1;
+}
+
+/* Contacto */
+.contacto {
+    padding: 2rem;
+    background-color: var(--light-color);
+}
+.contacto h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+.contacto form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.contacto input, .contacto textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+}
+.contacto button {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.contacto button:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Footer */
+footer {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    padding: 1.5rem 0;
+    text-align: center;
+}
+footer .iconos-redes-sociales a {
+    color: var(--light-color);
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+}
+footer .iconos-redes-sociales a:hover {
+    color: var(--primary-color);
+}
+
+badges.contenedor {
+    color: var(--light-color);
+
+}
